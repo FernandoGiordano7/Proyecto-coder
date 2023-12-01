@@ -114,11 +114,14 @@
     }
 
     .registro{
+
+        margin-top: 50px;
         p{
             margin: 20px;
         }
 
         .form{
+            margin-bottom: 120px;
             input{
                 width: 280px;
             }
@@ -132,6 +135,8 @@
         justify-content: center;
         align-items: center;
     }
+
+    
 
 }
 
@@ -345,6 +350,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        
     }
 
 }
@@ -431,13 +437,7 @@
         }
     }
 
-    .footer{
-        height: 105px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
+    
 
 }
 
@@ -505,18 +505,9 @@
         }
     }
 
-    .registro{
-        margin-bottom: 230px;
+    .form{
+        margin-top: 100px;
     }
-
-    .footer{
-        height: 105px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-
 
 }
+

@@ -43,7 +43,7 @@ body {
 .navegacion .nav-item .item {
   display: flex;
   align-items: center;
-  height: 100%;
+  height: 130%;
   padding-left: 20px;
   padding-right: 20px;
   transition: all 0.4s ease;
@@ -51,6 +51,7 @@ body {
 .navegacion .nav-item .item a {
   display: flex;
   justify-content: center;
+  margin-top: 20px;
   width: 100px;
   color: rgb(58, 93, 174);
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
@@ -154,11 +155,11 @@ body {
   background-color: rgb(224, 224, 224);
   margin-top: 15px;
   width: 40%;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   color: rgb(24, 43, 87);
 }
 .contacto-container .contacto h1 {
   margin-top: 10px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 .contacto-container .contacto input {
   margin: 10px;
@@ -292,6 +293,7 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 90px;
 }
 .registro .form input {
   width: 400px;
@@ -412,8 +414,14 @@ a {
   .repuestos h1 {
     font-size: xx-large;
   }
+  .registro {
+    margin-top: 50px;
+  }
   .registro p {
     margin: 20px;
+  }
+  .registro .form {
+    margin-bottom: 120px;
   }
   .registro .form input {
     width: 280px;
@@ -637,13 +645,6 @@ a {
     margin-top: 25px;
     line-height: 120%;
   }
-  .footer {
-    height: 105px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
 }
 @media (min-width: 1023px) and (max-width: 1440px) {
   .navegacion {
@@ -690,15 +691,8 @@ a {
   .contacto-container .contacto input {
     width: 500px;
   }
-  .registro {
-    margin-bottom: 230px;
-  }
-  .footer {
-    height: 105px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  .form {
+    margin-top: 100px;
   }
 }
 
