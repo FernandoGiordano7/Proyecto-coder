@@ -1,3 +1,5 @@
+@import './partials/variables';
+
 @font-face {
     font-family:"Nexa-Heavy";
     src: url('../font/nexa/Nexa-Heavy.ttf');
@@ -11,9 +13,9 @@ body {
 }
 
 .navegacion{
-    width: 100%;
+    width: $ancho;
     height: 60px;
-    background-color: rgb(255, 255, 255);
+    background-color: $blanco;
     position: sticky;
     top: 0;
     z-index: 10;
@@ -40,8 +42,8 @@ body {
     .nav-item {
         display: flex;
         list-style: none;
-        height: 100%;
-        width: 50%;
+        height: $alto;
+        width: $ancho/2;
         align-items: center;
         margin-right: 20%;
         margin-top: 0%;
@@ -59,17 +61,17 @@ body {
                 justify-content: center;
                 margin-top: 20px;
                 width: 100px;
-                color: rgb(58, 93, 174);
-                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                color: $azul;
+                font-family: $franklin;
                 font-size: large;
                 text-decoration: none;
             }
         
         &:hover{
-            background-color: rgb(58,93,174);
+            background-color: $azul;
 
             a{
-                color: white;
+                color: $blanco;
             }
         }
         }
@@ -77,9 +79,10 @@ body {
 }
 
 .GiordanoCam{
-    width: 100%;
+    width: $ancho;
     height: 500px;
-    display: flexbox;
+    display: flex;
+    flex-direction: column;
     background-image: url('../img/46538-camiones.jpg');
     background-size: cover;
 
@@ -99,8 +102,8 @@ body {
 
         .h1 {
             text-align: center;
-            color: white;
-            font-family:"Nexa-ExtraLight" ;
+            color: $blanco;
+            font-family:$nexa ;
             font-size:400%;
             margin-top: 10px;
         }
@@ -115,15 +118,15 @@ body {
         button {
             padding: 15px;
             border-radius: 15px;
-            border-color: white;
+            border-color: $blanco;
             background-color: transparent;
-            color: white;
-            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: $blanco;
+            font-family: $franklin;
             font-size: x-large;
             transition: all 0.4s ease;
 
             &:hover{
-                background-color: white;
+                background-color: $blanco;
             color: black;
             }
         }         
@@ -141,8 +144,8 @@ body {
             margin:13px;
             padding: 12px;
             border-radius: 15px;
-            background-color: rgba(255, 255, 255, 0.61);
-            color: white;
+            background-color: $gris;
+            color: $blanco;
         }
     }
 }
@@ -170,19 +173,20 @@ body {
 
     .contacto{
         display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 500px;
-    height: 600px;
-    border-radius: 10px;
-    background-color: rgb(224, 224, 224);
-    margin-top: 15px;
-    width: 40%;
-    color:rgb(24, 43, 87);
+        flex-direction: column;
+        align-items: center;
+        width: 500px;
+        height: 550px;
+        border-radius: 10px;
+        background-color: $gris;
+        margin-top: 15px;
+        width: 40%;
+        color:$azuloscuro;
 
-        h1{
-            margin-top: 10px;
-            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        h2{
+            margin-top: 20px;
+            font-family: $franklin;
+            font-size: xx-large;
         }
 
         input{
@@ -206,38 +210,70 @@ body {
             width: 200px;
             height: 50px;
             border-radius: 15px;
-            color: white;
-            background-color: rgb(58, 93, 174);
+            color: $blanco;
+            background-color: $azul;
             border-radius: 10px;
             font-family: Arial, Helvetica, sans-serif;
             transition: all 0.4s ease;
 
             &:hover{
-                background-color: rgb(108, 128, 175);
+                background-color: $azulclaro;
+            }
+        }
+
+        a{
+            color:$azul;
+        }
+
+        .redes{
+            margin-top: 50px ;
+
+            .bxl-whatsapp{
+                color: $blanco;
+                background-color: rgb(49, 178, 49);
+                border-radius: 5px;
+            }
+
+            .bxl-instagram{
+                color: $blanco;
+                background: #f09433; 
+                background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+                background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+                background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 ); 
+                border-radius: 5px;
+            }
+
+            .bxl-facebook{
+                color: $blanco;
+                background-color: $azul;
+                border-radius: 5px;
             }
         }
     }
 }
 
+.qs{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    font-family: $franklin;
+    color:$azuloscuro;
+}
+
 .section{
-    display: flexbox;
+    display: flex;
     margin-top: 50px;
 
-    .qs{
-        display: flex;
-        justify-content: center;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        color:rgb(24, 43, 87);
-    }
-
+    
     .nosotros{
         display: flex;
-        width: 100%;
+        width: $ancho;
         height: 500px;
-        background-color:rgb(58,93,174) ;
-
+        background-color:$azul ;
+        
         img{
-            width: 50%;
+            width: $ancho/2;
             height: 450px;
             margin-left: 5rem;
             margin-top: 25px;
@@ -259,12 +295,12 @@ body {
 }
 
 .ubicacion{
-    width: 100%;
+    width: $ancho;
     height: 550px;
     margin-top: 85px ;
     text-align: center;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color:rgb(24, 43, 87);
+    font-family: $franklin;
+    color: $azuloscuro;
 
     iframe{
         display: flex;
@@ -284,11 +320,11 @@ a {
     align-items: center;
     margin-top: 50px;
 
-    h1{
+    h2{
         margin-bottom: 50px;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-family: $franklin;
         font-size:300%;
-        color: rgb(24, 43, 87);
+        color: $azuloscuro;
     }
 
 }
@@ -305,10 +341,10 @@ a {
     align-items: center;
     margin-top: 50px;
 
-    h1{
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    h2{
+        font-family: $franklin;
         font-size:300%;
-        color: rgb(24, 43, 87);
+        color: $azuloscuro;
     }
 }
 
@@ -319,14 +355,14 @@ a {
     margin-bottom: 170px;
 
     h1{
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-family: $franklin;
         font-size:300%;
-        color: rgb(24, 43, 87);
+        color: $azuloscuro;
     }
 
     p{
         font-family:Arial, Helvetica, sans-serif;
-        color: rgb(150, 150, 150);
+        color: $gris;
     }
 
     .form{
@@ -345,14 +381,14 @@ a {
             margin-top: 10px;
             height: 50px;
             width: 100px;
-            color:white ;
-            background-color: rgb(58,93,174);
+            color: $blanco;
+            background-color: $azul;
             border-radius: 10px;
             font-family: Arial, Helvetica, sans-serif;
             transition: all 0.4s ease;
 
             &:hover{
-                background-color: rgb(108, 128, 175);
+                background-color: $azulclaro;
             }
         }
 
@@ -365,11 +401,11 @@ a {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    width: 100%;
+    width: $ancho;
     height: 50px;
     margin-top: 30px;
-    background-color:rgb(58,93,174);
-    color: white;
+    background-color:$azul;
+    color: $blanco;
     font-family:Arial, Helvetica, sans-serif ;
 };
 

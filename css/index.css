@@ -62,13 +62,14 @@ body {
   background-color: rgb(58, 93, 174);
 }
 .navegacion .nav-item .item:hover a {
-  color: white;
+  color: rgb(255, 255, 255);
 }
 
 .GiordanoCam {
   width: 100%;
   height: 500px;
-  display: flexbox;
+  display: flex;
+  flex-direction: column;
   background-image: url("../img/46538-camiones.jpg");
   background-size: cover;
 }
@@ -84,7 +85,7 @@ body {
 }
 .GiordanoCam .div-h1 .h1 {
   text-align: center;
-  color: white;
+  color: rgb(255, 255, 255);
   font-family: "Nexa-ExtraLight";
   font-size: 400%;
   margin-top: 10px;
@@ -98,15 +99,15 @@ body {
 .GiordanoCam .boton button {
   padding: 15px;
   border-radius: 15px;
-  border-color: white;
+  border-color: rgb(255, 255, 255);
   background-color: transparent;
-  color: white;
+  color: rgb(255, 255, 255);
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-size: x-large;
   transition: all 0.4s ease;
 }
 .GiordanoCam .boton button:hover {
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   color: black;
 }
 .GiordanoCam .logos {
@@ -121,8 +122,8 @@ body {
   margin: 13px;
   padding: 12px;
   border-radius: 15px;
-  background-color: rgba(255, 255, 255, 0.61);
-  color: white;
+  background-color: rgba(216, 216, 216, 0.903);
+  color: rgb(255, 255, 255);
 }
 
 .h1-destacados {
@@ -150,16 +151,17 @@ body {
   flex-direction: column;
   align-items: center;
   width: 500px;
-  height: 600px;
+  height: 550px;
   border-radius: 10px;
-  background-color: rgb(224, 224, 224);
+  background-color: rgba(216, 216, 216, 0.903);
   margin-top: 15px;
   width: 40%;
   color: rgb(24, 43, 87);
 }
-.contacto-container .contacto h1 {
-  margin-top: 10px;
+.contacto-container .contacto h2 {
+  margin-top: 20px;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: xx-large;
 }
 .contacto-container .contacto input {
   margin: 10px;
@@ -179,7 +181,7 @@ body {
   width: 200px;
   height: 50px;
   border-radius: 15px;
-  color: white;
+  color: rgb(255, 255, 255);
   background-color: rgb(58, 93, 174);
   border-radius: 10px;
   font-family: Arial, Helvetica, sans-serif;
@@ -188,16 +190,43 @@ body {
 .contacto-container .contacto button:hover {
   background-color: rgb(108, 128, 175);
 }
-
-.section {
-  display: flexbox;
+.contacto-container .contacto a {
+  color: rgb(58, 93, 174);
+}
+.contacto-container .contacto .redes {
   margin-top: 50px;
 }
-.section .qs {
+.contacto-container .contacto .redes .bxl-whatsapp {
+  color: rgb(255, 255, 255);
+  background-color: rgb(49, 178, 49);
+  border-radius: 5px;
+}
+.contacto-container .contacto .redes .bxl-instagram {
+  color: rgb(255, 255, 255);
+  background: #f09433;
+  background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  background: -webkit-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#f09433", endColorstr="#bc1888",GradientType=1 );
+  border-radius: 5px;
+}
+.contacto-container .contacto .redes .bxl-facebook {
+  color: rgb(255, 255, 255);
+  background-color: rgb(58, 93, 174);
+  border-radius: 5px;
+}
+
+.qs {
   display: flex;
   justify-content: center;
+  margin-top: 30px;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   color: rgb(24, 43, 87);
+}
+
+.section {
+  display: flex;
+  margin-top: 50px;
 }
 .section .nosotros {
   display: flex;
@@ -249,7 +278,7 @@ a {
   align-items: center;
   margin-top: 50px;
 }
-.repuestos h1 {
+.repuestos h2 {
   margin-bottom: 50px;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-size: 300%;
@@ -268,7 +297,7 @@ a {
   align-items: center;
   margin-top: 50px;
 }
-.acoplados h1 {
+.acoplados h2 {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-size: 300%;
   color: rgb(24, 43, 87);
@@ -287,7 +316,7 @@ a {
 }
 .registro p {
   font-family: Arial, Helvetica, sans-serif;
-  color: rgb(150, 150, 150);
+  color: rgba(216, 216, 216, 0.903);
 }
 .registro .form {
   display: flex;
@@ -304,7 +333,7 @@ a {
   margin-top: 10px;
   height: 50px;
   width: 100px;
-  color: white;
+  color: rgb(255, 255, 255);
   background-color: rgb(58, 93, 174);
   border-radius: 10px;
   font-family: Arial, Helvetica, sans-serif;
@@ -324,7 +353,7 @@ a {
   height: 50px;
   margin-top: 30px;
   background-color: rgb(58, 93, 174);
-  color: white;
+  color: rgb(255, 255, 255);
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -690,6 +719,17 @@ a {
   }
   .contacto-container .contacto input {
     width: 500px;
+  }
+  .section {
+    display: flexbox;
+  }
+  .section .nosotros img {
+    margin-left: 15px;
+  }
+  .section .nosotros p {
+    font-size: 150%;
+    margin-top: 25px;
+    line-height: 120%;
   }
   .form {
     margin-top: 100px;
