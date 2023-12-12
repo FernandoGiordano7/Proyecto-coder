@@ -32,18 +32,19 @@ body {
   height: 60px;
 }
 .navegacion .nav-item {
+  width: 50%;
+  height: 100%;
   display: flex;
   list-style: none;
-  height: 100%;
-  width: 50%;
   align-items: center;
   margin-right: 20%;
   margin-top: 0%;
 }
 .navegacion .nav-item .item {
+  width: 20%;
+  height: 130%;
   display: flex;
   align-items: center;
-  height: 130%;
   padding-left: 20px;
   padding-right: 20px;
   transition: all 0.4s ease;
@@ -67,7 +68,7 @@ body {
 
 .GiordanoCam {
   width: 100%;
-  height: 500px;
+  height: 550px;
   display: flex;
   flex-direction: column;
   background-image: url("../img/46538-camiones.jpg");
@@ -115,14 +116,14 @@ body {
   justify-content: center;
 }
 .GiordanoCam .logos .img-logos {
-  display: inline-flex;
   width: 150px;
   height: 150px;
+  display: inline-flex;
   flex-direction: row;
   margin: 13px;
   padding: 12px;
   border-radius: 15px;
-  background-color: rgba(216, 216, 216, 0.903);
+  background-color: rgb(218, 218, 218);
   color: rgb(255, 255, 255);
 }
 
@@ -147,13 +148,13 @@ body {
   margin-bottom: 70px;
 }
 .contacto-container .contacto {
+  width: 500px;
+  height: 550px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 500px;
-  height: 550px;
   border-radius: 10px;
-  background-color: rgba(216, 216, 216, 0.903);
+  background-color: rgb(218, 218, 218);
   margin-top: 15px;
   width: 40%;
   color: rgb(24, 43, 87);
@@ -164,9 +165,9 @@ body {
   font-size: xx-large;
 }
 .contacto-container .contacto input {
-  margin: 10px;
   width: 400px;
   height: 40px;
+  margin: 10px;
   border-radius: 10px;
   margin: 20px;
 }
@@ -229,9 +230,9 @@ body {
   margin-top: 50px;
 }
 .section .nosotros {
-  display: flex;
   width: 100%;
   height: 500px;
+  display: flex;
   background-color: rgb(58, 93, 174);
 }
 .section .nosotros img {
@@ -316,7 +317,7 @@ a {
 }
 .registro p {
   font-family: Arial, Helvetica, sans-serif;
-  color: rgba(216, 216, 216, 0.903);
+  color: rgba(148, 148, 148, 0.903);
 }
 .registro .form {
   display: flex;
@@ -330,9 +331,9 @@ a {
   margin: 10px;
 }
 .registro .form button {
-  margin-top: 10px;
-  height: 50px;
   width: 100px;
+  height: 50px;
+  margin-top: 10px;
   color: rgb(255, 255, 255);
   background-color: rgb(58, 93, 174);
   border-radius: 10px;
@@ -344,13 +345,13 @@ a {
 }
 
 .footer {
+  width: 100%;
+  height: 50px;
   bottom: 0%;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  width: 100%;
-  height: 50px;
   margin-top: 30px;
   background-color: rgb(58, 93, 174);
   color: rgb(255, 255, 255);
